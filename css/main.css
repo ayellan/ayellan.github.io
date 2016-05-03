@@ -181,6 +181,8 @@ section h1 {
 
 #section2content {
     display: none;
+    position: relative;
+    margin-top: -350px;
 }
 
 #section3 {
@@ -193,6 +195,8 @@ section h1 {
 
 #section3content {
     display: none;
+    position: relative;
+    margin-top: -350px;
 }
 
 #section4 {
@@ -205,6 +209,8 @@ section h1 {
 
 #section4content {
     display: none;
+    position: relative;
+    margin-top: -350px;
 }
 
 #bottomNav {
@@ -228,6 +234,10 @@ footer {
     background-color: black;
 }
 
+#topNav a:hover {
+    background-color: black;
+    padding: 30px 0;
+}
 
 
 
