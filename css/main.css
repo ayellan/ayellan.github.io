@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -95,15 +95,138 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0 auto;
+    background-color: black;
+}
 
+header {
+    float:left;
+    width: 100%;
+    position: fixed;
+}
 
+#topNav {
+    float: right;
+}
 
+#topNav li {
+    display:inline-block;
+    padding: 0 20px;
+    font-size: 1.111rem; 
+}
 
+#topNav a {
+    text-decoration: none;
+    color: white;
+}
 
+section {
+    width: 100%;
+    height: 800px;
+    font-size: 2rem;
+    clear:both;
+    text-align: center;
+}
 
+section:first-of-type {
+    clear: none;
+}
 
+section h1 {
+    margin: 0 auto;
+    font-size: 8rem;
+    width:50%;
+    position: relative;
+    top: 25%;
+    background-color: RGBA(255, 255, 255, .2)
+}
 
+#section1 h3 {
+    margin: 0 auto;
+    position: relative;
+    top: 24%;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.pageButton {
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    color: white;
+    background-color: RGBA(39, 40, 34, 1.00)
+}
+
+#section1 {
+    background: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=76fba3bdb1e04cb26a02000be2fe7740") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section2 {
+    background: url("https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d229e68d587bc1201d35e234804d4006") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section2content {
+    display: none;
+}
+
+#section3 {
+    background: url("https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=28479d21d43a5c1a0aed80bf0804e445") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+#section3content {
+    display: none;
+}
+
+#section4 {
+    background: url("https://images.unsplash.com/photo-1431068799455-80bae0caf685?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1103483fbdea36a28a44f625bfe2214a") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section4content {
+    display: none;
+}
+
+#bottomNav {
+    text-align: center;
+}
+
+#bottomNav a {
+    text-decoration: none;
+    color: white;
+}
+
+#bottomNav li {
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid white;    
+}
+
+footer {
+    width: 100%;
+    z-index: 0;
+    background-color: black;
+}
 
 
 
