@@ -73,9 +73,9 @@ $('#topNav a').on('click', function(e) {
 // Click on Nav links 
 	$('#topNav a').on('click', function() {
 	//	reset sections	
-			//	fade out content
+			//	fade out all content
 				$('#section2content, #section3content, #section4content').fadeOut(300);
-			//	fade in previous section
+			//	fade in  all previous sections
 				$('#section2, #section3, #section4').delay(300).fadeIn(1000);
 	});
 
@@ -133,7 +133,3 @@ $('#upvote').on('click', function() {
   $('#votes').html('Likes: ' + likeCount[currentPosition]);
 });
 
-
-//	click on #emailbutton
-
-	//	opens up email form
