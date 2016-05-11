@@ -146,6 +146,8 @@ section {
     font-size: 2rem;
     clear:both;
     text-align: center;
+    overflow: hidden;
+
 }
 
 section:first-of-type {
@@ -207,7 +209,7 @@ section h1 {
 }
 
 .backButton {
-    max-width: 15%;
+    max-width: 25%;
     margin: 0 auto;
     position: relative;
     left: 0;
@@ -256,6 +258,7 @@ section h1 {
     width: 100%;
     margin: 0 auto;
     color: white;
+    overflow: hidden;
 }
 
 #section2content p {
@@ -267,7 +270,24 @@ section h1 {
     font-size: .8rem;
 }
 
-#section2content img {
+#aboutImages {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 100%; 
+}
+
+#aboutImages img {
+    display: inline-block;
+    margin: 20px;
+    max-width:20%;
+    max-height:20%;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+
+/*#section2content img {
     display: block;
     margin: 100px auto 0 auto;
     max-width:70%;
@@ -275,7 +295,7 @@ section h1 {
     width: auto;
     height: auto;
     border-radius: 100%;
-}
+}*/ 
 
 #section3 {
     background: url("https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=44100217df531765e155549ce3e11a43") no-repeat center center;
@@ -290,6 +310,8 @@ section h1 {
     width: 100%;
     margin: 0 auto;
     color: white;
+    overflow: hidden;
+
 }
 
 #section3content p {
@@ -333,7 +355,7 @@ section h1 {
 }
 
 #section4top h1{
-    width: 80%;
+    width: 100%;
 }
 
 #bgvid { 
@@ -360,6 +382,7 @@ section h1 {
     width: 100%;
     margin: 0 auto;
     color: white;
+    overflow: hidden;
 }
 
 #section4-p {
@@ -434,7 +457,160 @@ footer {
     clear: both;
 }
 
-@media screen and (max-width: 900px) {
+/* Responsive Code*/
+
+@media screen 
+and (max-width: 750px) {
+    #topNav a{
+        font-size: 10pt;
+    }
+    #topNav li {
+        padding: 0 auto;
+    }
+    #section2content, #section3content, #section4content {
+        height: auto;
+    }
+    #buttons-wrapper {
+        position: relative;
+        top: -70px;
+    }
+    #container {
+        position: relative;
+        top: -70px;
+    }
+    #section4-p p {
+        display: none;
+    }
+    #section1 h1 {
+        font-size: 70pt;
+    }
+    #section1 h3 {
+        font-size: 15pt;
+    }
+    #section2 h1, #section3 h1, #section4 h1 {
+        font-size: 50pt;
+    }
+    .pageButton, .backButton {
+        font-size: 10px;
+    }
+}
+
+@media screen 
+and (max-width: 420px) {
+    #topNav a{
+        font-size: 8pt;
+    }
+    #topNav li {
+        padding: 0 auto;
+    }
+    #section2content, #section3content, #section4content {
+        height: auto;
+    }
+    #buttons-wrapper {
+        position: relative;
+        top: -70px;
+    }
+    #container {
+        position: relative;
+        top: -70px;
+    }
+    #section4-p p {
+        display: none;
+    }
+    #section1 h1 {
+        font-size: 50pt;
+    }
+    #section1 h3 {
+        font-size: 10pt;
+        padding-top: 20px;
+    }
+    #section2 h1, #section3 h1, #section4 h1 {
+        font-size: 40pt;
+    }
+    #section2content p {
+        display: none;
+    }
+    #section3content p{
+        display: none;
+    }
+    #section4top h1 {
+        font-size: 30pt;
+    }
+    #workimages{
+        margin: 100px 0;
+    }
+    #aboutImages img{
+        padding-top: 100px;
+        max-width: 30%;
+        border-radius: 0;
+    }
+    .pageButton, .backButton {
+        font-size: 5pt;
+    }
+    .btn {
+        font-size: 6pt;
+    }
+}
+
+
+/*Ipad*/
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1024px) 
+and (orientation : portrait) {
+
+}
+
+/*Nexus 6p*/
+@media only screen
+and (min-device-width : 435px)
+and (max-device-width : 773px)
+and (orientation : portrait) {
+    
+}
+
+/*Iphone 6 PLUS*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+    
+}
+
+/*Iphone6*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    
+}
+
+/*Nexus 5x*/
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 640px)
+and (orientation : portrait) {
+    
+}
+
+/*IPhone 5*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    
+}
+
+/*Nexus 5x*/
+@media only screen
+and (min-device-width : 411px)
+and (max-device-width : 731px)
+and (orientation : portrait) {
+    
+}
+
+
+/*@media screen and (max-width: 900px) {
     html {
         font-size: 12px;
     }
@@ -448,7 +624,6 @@ footer {
         height: 80%;
     }
 }
-
 @media screen and (max-width: 600px) {
     html {
         font-size: 10px;
@@ -462,8 +637,11 @@ footer {
     .btn {
         font-size: 8px;
     }
+    #section2content p, #section2content img {
+        position: relative;
+        top: -100px;
+    }
 }
-
 
 @media screen and (max-width: 420px) {
     html {
@@ -478,10 +656,13 @@ footer {
     .btn {
         font-size: 6px;
     }
-
     #section2content p, #section2content img {
         position: relative;
-        top: -70px;
+        top: -100px;
+    }
+    #workimages {
+        position: relative;
+        top: -100px;
     }
     #section4-p {
         position: relative;
@@ -524,7 +705,7 @@ footer {
     }
     #workimages {
         position: relative;
-        top: -100px;
+        top: -150px;
     }
     #section4-p {
         position: relative;
@@ -539,8 +720,7 @@ footer {
         position: relative;
         top: -70px;
     }
-}
-
+}*/
 
 
 /* ==========================================================================

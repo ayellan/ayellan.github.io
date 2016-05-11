@@ -70,6 +70,15 @@ $('#topNav a').on('click', function(e) {
 		$('#section4 .pageButton').fadeOut().delay().fadeIn(5000);
 	});
 
+// Click on Nav links 
+	$('#topNav a').on('click', function() {
+	//	reset sections	
+			//	fade out content
+				$('#section2content, #section3content, #section4content').fadeOut(300);
+			//	fade in previous section
+				$('#section2, #section3, #section4').delay(300).fadeIn(1000);
+	});
+
 //	carousel
 	// create an array of image paths
 var images = ['11.jpg', '22.jpg', '33.jpg', '44.jpg', '55.jpg', '66.jpg', 'dancecity.jpg', '77.jpg', '88.jpg'];
