@@ -122,6 +122,7 @@ header {
 #topNav li {
     display: inline-block;
     padding: 0 10px;
+    font-size: 17px;
     font-size: 1.111rem;
 }
 
@@ -143,6 +144,7 @@ a {
 section {
     width: 100%;
     height: 800px;
+    font-size: 32px;
     font-size: 2rem;
     clear:both;
     text-align: center;
@@ -157,6 +159,7 @@ section:first-of-type {
 section h1 {
     margin: 0 auto;
     font-weight: 400;
+    font-size: 96px;
     font-size: 6rem;
     width:100%;
     position: relative;
@@ -170,6 +173,7 @@ section h1 {
     font-weight: 400;
     width: 100%;
     padding-bottom: 4%;
+    font-size: 128px;
     font-size: 8rem;
     background-color: transparent;
 
@@ -182,6 +186,7 @@ section h1 {
     position: relative;
     top: 24%;
     color: white;
+    font-size: 30px;
     font-size: 1.9rem;
 }
 
@@ -191,11 +196,9 @@ section h1 {
     position: relative;
     top: 25%;
     background: #25A6E1;
-    background: -moz-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#25A6E1),color-stop(100%,#188BC0));
     background: -webkit-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
-    background: -o-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
-    background: -ms-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+    background: -webkit-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
     background: linear-gradient(top,#25A6E1 0%,#188BC0 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
     padding:8px 13px;
@@ -216,11 +219,9 @@ section h1 {
     top: 50px;
     z-index: 100;
     background: #25A6E1;
-    background: -moz-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#25A6E1),color-stop(100%,#188BC0));
     background: -webkit-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
-    background: -o-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
-    background: -ms-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+    background: -webkit-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
     background: linear-gradient(top,#25A6E1 0%,#188BC0 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
     padding:8px 13px;
@@ -236,9 +237,6 @@ section h1 {
 #section1 {
     background: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=76fba3bdb1e04cb26a02000be2fe7740");
     background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
     background-position:center;
 }
@@ -246,9 +244,6 @@ section h1 {
 #section2 {
     background: url("https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4efaf1d988fdf1b79102ceb993b031d2");
     background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
     background-position:center;
 }
@@ -268,6 +263,7 @@ section h1 {
     margin: 150px auto 0 auto;
     padding: 0 20px;
     width: 25%;
+    font-size: 12px;
     font-size: .8rem;
 }
 
@@ -300,9 +296,6 @@ section h1 {
 
 #section3 {
     background: url("https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=44100217df531765e155549ce3e11a43") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover; 
 }
 
@@ -321,6 +314,7 @@ section h1 {
     margin: 100px auto 0 auto;
     padding: 0 20px 80px 0;
     width: 75%;
+    font-size: 12px;
     font-size: .8rem;
 }
 
@@ -397,6 +391,7 @@ section h1 {
 
 #section4content p {
     margin: 0 auto;
+    font-size: 12px;
     font-size: .8rem;
 }
 
@@ -418,7 +413,8 @@ section h1 {
   border: 1px solid transparent;
   border-radius: 4px;
   outline: none;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
 }
 
 #image-to-vote-on {
@@ -552,6 +548,7 @@ and (max-width: 420px) {
         font-size: 6pt;
     }
 }
+
 
 
 /*Ipad*/
