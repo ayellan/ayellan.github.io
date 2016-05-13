@@ -241,6 +241,14 @@ section h1 {
     background-position:center;
 }
 
+#section1 img {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -9999;
+    width: 1%;
+}
+
 #section2 {
     background: url("https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4efaf1d988fdf1b79102ceb993b031d2");
     background-repeat:no-repeat;
@@ -276,11 +284,8 @@ section h1 {
 
 #aboutImages img {
     display: inline-block;
-    margin: 20px;
-    max-width:20%;
-    max-height:20%;
-    width: auto;
-    height: auto;
+    margin: 20px 40px;
+    width: 20%;
     border-radius: 100%;
 }
 
@@ -321,9 +326,7 @@ section h1 {
 #section3content div img {
     display: inline-block;
     margin: 0 auto;
-    max-width: 20%;
-    width: auto;
-    height: auto;
+    width: 20%;
 }
 
 #workimages {
